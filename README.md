@@ -6,7 +6,7 @@ API REST para gerenciar um catálogo de videogames. Permite criar listas persona
 
 Plataforma backend para aplicações que precisam de um catálogo de jogos organizado. Suporta criação de listas temáticas (favoritos, wishlist, jogados, etc) e gerencimento completo de títulos.
 
-## 🛠️ Stack Técnico
+## Stacks
 
 - **Java 17** - Linguagem
 - **Spring Boot 3.x** - Web framework
@@ -15,7 +15,7 @@ Plataforma backend para aplicações que precisam de um catálogo de jogos organ
 - **H2 Database** - Ambiente dev
 - **Maven** - Build
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 git clone https://github.com/lutheone/games-list.git
@@ -25,7 +25,7 @@ mvn spring-boot:run
 
 API disponível em: `http://localhost:8080`
 
-## 📡 Endpoints
+## Endpoints
 
 ### Jogos
 
@@ -131,7 +131,7 @@ POST /api/game-lists/{listId}/games/{gameId}
 DELETE /api/game-lists/{listId}/games/{gameId}
 ```
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 Segue o padrão **MVC em Camadas**:
 
@@ -156,7 +156,7 @@ src/main/java/com/devsuperior/
     └── ResourceNotFoundException
 ```
 
-## 🗄️ Modelo de Dados
+## Modelo de Dados
 
 ### Tabela: games
 ```sql
@@ -192,7 +192,7 @@ CREATE TABLE game_list_items (
 );
 ```
 
-## 🧪 Exemplos de Uso
+## Exemplos de Uso
 
 ### CURL - Criar jogo
 ```bash
@@ -239,7 +239,7 @@ curl -X POST http://localhost:8080/api/game-lists/1/games/1
 - Lazy loading para otimização
 - Queries eficientes via JPA
 
-## 🔍 Debug
+## Debug
 
 **Console H2:**
 ```
